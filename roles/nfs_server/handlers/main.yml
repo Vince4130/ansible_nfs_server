@@ -1,0 +1,15 @@
+---
+# handlers file for nfs
+
+- name: Start server
+  ansible.builtin.service:
+    name: nfs-server
+    enabled: yes
+    state: started
+  # listen: nfs_server_start
+
+- name: Restart server
+  ansible.builtin.service:
+    name: nfs-server
+    state: restarted
+  # listen: nfs_server_restart

@@ -1,0 +1,4 @@
+---
+# vars file for nfs_client
+
+nfs_client_pkg: nfs-utils
