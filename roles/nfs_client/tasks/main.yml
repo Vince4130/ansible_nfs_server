@@ -8,7 +8,7 @@
   ansible.builtin.package:
     name: "{{ nfs_client_pkg }}"
     state: present
-  notify: nfs_server_start
+  notify: Start nfs
 
 - name: Create mount point
   ansible.builtin.file:
